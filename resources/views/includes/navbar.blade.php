@@ -35,8 +35,9 @@
                     </li>
                 @endauth
                 <li class="nav-item dropdown ms-3">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                         What's new?
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        What's new?
                     </a>
                     <ul class="dropdown-menu" style="overflow: hidden; margin-top: 13px !important;">
                         <li><a class="dropdown-item py-2" href="{{ route('project') }}">Project</a></li>
@@ -53,13 +54,14 @@
                 </li>
                 @auth
                     <li class="nav-item dropdown ms-3">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <strong style="font-size: 14px">{{ Auth::user()->name }}</strong>
                         </a>
                         <ul class="dropdown-menu" style="overflow: hidden; margin-top: 13px !important;">
                             @if (Auth::user()->type == 'student')
                                 <li>
-                                    <a class="dropdown-item py-2"  href="#">
+                                    <a class="dropdown-item py-2" href="#">
                                         <i class="bi bi-mortarboard me-1"></i>
                                         E-learning
                                     </a>
@@ -67,7 +69,7 @@
                             @endif
                             @if (Auth::user()->level == 'admin')
                                 <li>
-                                    <a class="dropdown-item py-2" href="{{ route('news') }}">
+                                    <a class="dropdown-item py-2" href="{{ route('dashboard') }}">
                                         <i class="bi bi-speedometer2 me-1"></i>
                                         Admin page
                                     </a>
