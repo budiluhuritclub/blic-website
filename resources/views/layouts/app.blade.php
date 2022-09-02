@@ -10,8 +10,8 @@ ini layouts untuk halaman admin, manage semua content untuk user
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ url('./template/assets/img/apple-icon.png') }}">
-    <link rel="icon" type="image/png" href="{{ url('./template/assets/img/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url('/public/template/assets/img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ url('/public/template/assets/img/favicon.png') }}">
     <title>
         @yield('title')
     </title>
