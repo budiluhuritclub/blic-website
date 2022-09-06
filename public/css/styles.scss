@@ -47,7 +47,8 @@ main {
     h6 {
         font-size: 16px;
     }
-    p {
+    p,
+    li {
         font-size: 13px;
     }
 }
@@ -72,7 +73,8 @@ main {
     h6 {
         font-size: 13px;
     }
-    p {
+    p,
+    li {
         font-size: 13px;
     }
 }
@@ -97,7 +99,8 @@ main {
     h6 {
         font-size: 18px;
     }
-    p {
+    p,
+    li {
         font-size: 15px;
     }
 }
@@ -122,7 +125,8 @@ main {
     h6 {
         font-size: 18px;
     }
-    p {
+    p,
+    li {
         font-size: 15px;
     }
 }
@@ -160,30 +164,13 @@ main {
     }
 }
 
-.footer {
-    min-height: 400px;
-    padding-top: 100px;
-    h3 {
-        color: white;
-    }
-    h6 {
-        color: white;
-    }
-    p {
-        color: white;
-    }
-    a {
-        text-decoration: none;
-        font-style: none;
-        color: white;
-    }
-    .social-media {
-        margin-left: -30px;
-        li {
-            text-decoration: none;
-            list-style: none;
-        }
-    }
+.section-history {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-top: 25px;
+    min-height: 200px;
 }
 
 .contact-us-section {
@@ -233,6 +220,29 @@ main {
 
 .footer {
     background-color: #32325D;
+    min-height: 400px;
+    padding-top: 100px;
+    h3 {
+        color: white;
+    }
+    h6 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    a {
+        text-decoration: none;
+        font-style: none;
+        color: white;
+    }
+    .social-media {
+        margin-left: -30px;
+        li {
+            text-decoration: none;
+            list-style: none;
+        }
+    }
 }
 
 .bottom-footer {
