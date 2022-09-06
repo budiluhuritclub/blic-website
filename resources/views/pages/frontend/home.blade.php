@@ -23,8 +23,7 @@
                         Budi Luhur University students in the field of Information Technology</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ url('/public/images/universitasbudiluhur.jpeg') }}" alt=""
-                        class="image-who-we-are">
+                    <img src="{{ url('./images/universitasbudiluhur.jpeg') }}" alt="" class="image-who-we-are">
                 </div>
             </div>
         </div>
