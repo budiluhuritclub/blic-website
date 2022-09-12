@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Event\EventregisterController;
+use App\Http\Controllers\Event\SuccessController;
 use App\Http\Controllers\Frontend\AboutusController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\DivisionController;
@@ -35,6 +37,10 @@ Route::get('/news', [NewsController::class, 'index'])->name('news');
 //onepage
 Route::get('/welcome', [OnepageController::class, 'index'])->name('welcome');
 
+// event
+Route::get('/devcamp-01', [EventregisterController::class, 'index'])->name('register-event');
+Route::post('/devcamp-01/store', [EventregisterController::class, 'store'])->name('register-event-store');
+Route::get('/devcamp-01/success', [SuccessController::class, 'index'])->name('success-register-event');
 
 //admin
 Route::prefix('admin')->group(function () {
