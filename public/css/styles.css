@@ -228,6 +228,14 @@ main {
   transition: 1s;
 }
 
+.form-section {
+  margin-top: 100px;
+}
+
+.success-card {
+  margin-top: 200px;
+}
+
 .footer {
   background-color: #32325D;
   min-height: 400px;
