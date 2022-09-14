@@ -12,7 +12,9 @@
         </div>
     </div>
 
-    @include('includes.alerts')
+    <div class="container">
+        @include('includes.alerts')
+    </div>
 
     <div class="form-section">
         <div class="container">

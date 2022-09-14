@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Event;
 
 use App\Http\Controllers\Controller;
 use App\Models\Events;
-use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 
 class EventregisterController extends Controller
 {
@@ -28,12 +28,14 @@ class EventregisterController extends Controller
      */
     public function store(Request $request)
     {
+        $fakultas = ['FTI', 'FIKOM', 'FISIP', 'FT', 'FEB', 'AST'];
+
         $validator = Validator::make($request->all(), [
-            'nama'      =>      'required|min:5',
+            'nama'      =>      'required|size:40',
             'nim'       =>      'required|digits:10',
-            'email'     =>      'required',
-            'no_telp'   =>      'required',
-            'fakultas'  =>      'required',
+            'email'     =>      'required|email',
+            'no_telp'   =>      'required|numeric|digits_between:10,14',
+            'fakultas'  =>      ['required', Rule::in($fakultas)],
         ]);
 
         if ($validator->fails()) {
