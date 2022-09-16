@@ -50,7 +50,7 @@
 </footer>
 <div class="bottom-footer">
     <div class="container">
-        <p style="background-color: rgb(38, 40, 49);" class="text-center white">&copy; Budi Luhur IT Club -
+        <p style="background-color: rgb(38, 40, 49);" class="text-center white">&copy; budiluhuritclub -
             made with brain</p>
     </div>
 </div>

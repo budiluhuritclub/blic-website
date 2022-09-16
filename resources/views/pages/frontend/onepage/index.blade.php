@@ -111,6 +111,20 @@
                     and so on. But for now, we only have development for the Android platform.
                 </p>
             </div>
+            <!-- UI/UX -->
+            <div class="card px-4 py-4 my-4">
+                <div class="d-flex">
+                    <img src="" alt="" class="rounded">
+                    <h4 class="ms-2">Design UI/UX</h4>
+                </div>
+                <p class="description">
+                    UI/ux design is an activity that creates and designs a design concept for software, whether
+                    it is website-based or mobile-based. UI and UX itself have their own meaning, definition,
+                    and function, but they are related to each other. UI stands for User Interface which is the
+                    visual part of a software. While UX stands for User Experience which is the user experience
+                    in using a software or system.
+                </p>
+            </div>
             <!-- Data mining -->
             <div class="card px-4 py-4 my-4">
                 <div class="d-flex">
@@ -165,7 +179,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <a href="">
+                        <a href="#">
                             <button class="btn btn-primary w-100 mt-4">Register Now</button>
                         </a>
                     </div>
