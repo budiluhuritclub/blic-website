@@ -34,7 +34,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="no_telp" class="form-label">No. Handphone</label>
-                    <input type="tel" class="form-control" id="no_telp" name="no_telp">
+                    <input type="number" class="form-control" id="no_telp" name="no_telp">
                 </div>
                 <div class="mb-3">
                     <label for="fakultas" class="form-label">Fakultas</label>

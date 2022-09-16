@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\DevcampController;
 use App\Http\Controllers\Event\EventregisterController;
 use App\Http\Controllers\Event\SuccessController;
 use App\Http\Controllers\Frontend\AboutusController;
@@ -46,5 +47,7 @@ Route::get('/devcamp-01/success', [SuccessController::class, 'index'])->name('su
 Route::prefix('admin')->group(function () {
     Route::middleware(['middleware' => 'auth', 'admin'])->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+        Route::resource('devcamp', DevcampController::class);
     });
 });

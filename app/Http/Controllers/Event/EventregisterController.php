@@ -31,7 +31,7 @@ class EventregisterController extends Controller
         $fakultas = ['FTI', 'FIKOM', 'FISIP', 'FT', 'FEB', 'AST'];
 
         $validator = Validator::make($request->all(), [
-            'nama'      =>      'required|size:40',
+            'nama'      =>      'required|min:10',
             'nim'       =>      'required|digits:10',
             'email'     =>      'required|email',
             'no_telp'   =>      'required|numeric|digits_between:10,14',
