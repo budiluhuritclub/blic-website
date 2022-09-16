@@ -43,13 +43,7 @@
                                 Web programming is an attempt to build a website-based application that
                                 can provide
                                 information for
-                                internet users and is easy to access. In website development, just like with mobile-based
-                                programming,
-                                website development also requires and uses a programming language to create a website. In
-                                each
-                                development, it is usually divided into two, namely front-end and back-end. each of these
-                                two types
-                                requires its own programming language, but they are related to each other.</p>
+                                internet users and is easy to access...</p>
                         </div>
                     </a>
                 </div>
@@ -60,11 +54,7 @@
                             <p class="description">Mobile programming is a process of making a mobile-based application for
                                 certain platforms
                                 such as
-                                Android, iOS, and Windows phones. In the manufacturing process, this mobile-based
-                                application uses a
-                                programming language that is devoted to creating mobile applications such as Java, Kotlin,
-                                Dart, Swift,
-                                and so on. But for now, we only have development for the Android platform.</p>
+                                Android, iOS, and Windows phones...</p>
                         </div>
                     </a>
                 </div>
@@ -74,10 +64,7 @@
                             <h4>UI/UX</h4>
                             <p class="description">UI/ux design is an activity that creates and designs a design concept for
                                 software, whether
-                                it is website-based or mobile-based. UI and UX itself have their own meaning, definition,
-                                and function, but they are related to each other. UI stands for User Interface which is the
-                                visual part of a software. While UX stands for User Experience which is the user experience
-                                in using a software or system.</p>
+                                it is website-based or mobile-based...</p>
                         </div>
                     </a>
                 </div>
@@ -88,9 +75,7 @@
                             <p class="description">In short, data mining is the study of methods for extracting knowledge or
                                 finding patterns
                                 from a large
-                                and multiple dataset. Data mining activities include collecting, using historical data to
-                                find
-                                regularities, patterns, and relationships in large data sets</p>
+                                and multiple dataset...</p>
                         </div>
                     </a>
                 </div>
@@ -101,13 +86,7 @@
                             <p class="description">Cyber security is an action taken in an effort to protect a computer
                                 system from attacks or
                                 illegal
-                                access. Referring to the International Telecommunications Union (ITU), these cyber security
-                                measures
-                                include tools, policies, security concepts, etc., that can be used to protect organizations,
-                                and user
-                                assets. Cyber security leads to security and ensures that data is confidential and has the
-                                properties of
-                                Confidentials, Integrity, and Availability which are the three points of the CIA Triad.</p>
+                                access...</p>
                         </div>
                     </a>
                 </div>
