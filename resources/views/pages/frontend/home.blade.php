@@ -39,7 +39,11 @@
                     <a href="">
                         <div class="card px-5 py-5">
                             <h4>Web programming</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, explicabo.</p>
+                            <p class="description">
+                                Web programming is an attempt to build a website-based application that
+                                can provide
+                                information for
+                                internet users and is easy to access...</p>
                         </div>
                     </a>
                 </div>
@@ -47,7 +51,10 @@
                     <a href="">
                         <div class="card px-5 py-5">
                             <h4>Mobile programming</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, explicabo.</p>
+                            <p class="description">Mobile programming is a process of making a mobile-based application for
+                                certain platforms
+                                such as
+                                Android, iOS, and Windows phones...</p>
                         </div>
                     </a>
                 </div>
@@ -55,7 +62,9 @@
                     <a href="">
                         <div class="card px-5 py-5">
                             <h4>UI/UX</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, explicabo.</p>
+                            <p class="description">UI/ux design is an activity that creates and designs a design concept for
+                                software, whether
+                                it is website-based or mobile-based...</p>
                         </div>
                     </a>
                 </div>
@@ -63,7 +72,10 @@
                     <a href="">
                         <div class="card px-5 py-5">
                             <h4>Data mining</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, explicabo.</p>
+                            <p class="description">In short, data mining is the study of methods for extracting knowledge or
+                                finding patterns
+                                from a large
+                                and multiple dataset...</p>
                         </div>
                     </a>
                 </div>
@@ -71,7 +83,10 @@
                     <a href="">
                         <div class="card px-5 py-5">
                             <h4>Cyber security</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, explicabo.</p>
+                            <p class="description">Cyber security is an action taken in an effort to protect a computer
+                                system from attacks or
+                                illegal
+                                access...</p>
                         </div>
                     </a>
                 </div>
@@ -86,8 +101,8 @@
                     <div class="row my-5">
                         <div class="col-md-6 mx-auto text-center">
                             <h3>Frequently Asked Questions</h3>
-                            <p>A lot of people don't appreciate the moment until it's passed. I'm not trying my hardest,
-                                and I'm not trying to do </p>
+                            <p>A lot of people don't appreciate the moment until it's passed. Try to ask if you don't know
+                                to survive in life.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -98,7 +113,7 @@
                                         <button class="accordion-button border-bottom font-weight-bold text-sm collapsed"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                             aria-expanded="false" aria-controls="collapseOne">
-                                            How do I order?
+                                            How do I join?
                                             <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3"
                                                 aria-hidden="true"></i>
                                             <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3"
@@ -108,12 +123,9 @@
                                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                         data-bs-parent="#accordionRental" style="">
                                         <div class="accordion-body text-sm opacity-8">
-                                            We’re not always in the position that we want to be at. We’re constantly
-                                            growing. We’re constantly making mistakes. We’re constantly trying to
-                                            express ourselves and actualize our dreams. If you have the opportunity to
-                                            play this game
-                                            of life you need to appreciate every moment. A lot of people don’t
-                                            appreciate the moment until it’s passed.
+                                            You can call our support for join our club. Indeed, you can go to the
+                                            registration member's page to input your data, and our spv will contact you
+                                            after we proceed your form.
                                         </div>
                                     </div>
                                 </div>
@@ -122,7 +134,7 @@
                                         <button class="accordion-button border-bottom font-weight-bold text-sm"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                            How can i make the payment?
+                                            When are the learning activities held?
                                             <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3"
                                                 aria-hidden="true"></i>
                                             <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3"
@@ -132,17 +144,9 @@
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                         data-bs-parent="#accordionRental">
                                         <div class="accordion-body text-sm opacity-8">
-                                            It really matters and then like it really doesn’t matter. What matters is
-                                            the people who are sparked by it. And the people who are like offended by
-                                            it, it doesn’t matter. Because it's about motivating the doers. Because I’m
-                                            here to follow my dreams and inspire other people to follow their dreams,
-                                            too.
-                                            <br>
-                                            We’re not always in the position that we want to be at. We’re constantly
-                                            growing. We’re constantly making mistakes. We’re constantly trying to
-                                            express ourselves and actualize our dreams. If you have the opportunity to
-                                            play this game of life you need to appreciate every moment. A lot of people
-                                            don’t appreciate the moment until it’s passed.
+                                            Learning activities will be held once a week per division, funds for training
+                                            activities will be carried out per case session. one case session can take up to
+                                            a month.
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +155,7 @@
                                         <button class="accordion-button border-bottom font-weight-bold text-sm"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                             aria-expanded="false" aria-controls="collapseThree">
-                                            How much time does it take to receive the order?
+                                            Can I follow the learning path as learning way?
                                             <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3"
                                                 aria-hidden="true"></i>
                                             <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3"
@@ -161,69 +165,9 @@
                                     <div id="collapseThree" class="accordion-collapse collapse"
                                         aria-labelledby="headingThree" data-bs-parent="#accordionRental">
                                         <div class="accordion-body text-sm opacity-8">
-                                            The time is now for it to be okay to be great. People in this world shun
-                                            people for being great. For being a bright color. For standing out. But the
-                                            time is now to be okay to be the greatest you. Would you believe in what you
-                                            believe in, if you were the only one who believed it?
-                                            If everything I did failed - which it doesn't, it actually succeeds - just
-                                            the fact that I'm willing to fail is an inspiration. People are so scared to
-                                            lose that they don't even try. Like, one thing people can't say is that I'm
-                                            not trying, and I'm not trying my hardest, and I'm not trying to do the best
-                                            way I know how.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item mb-3">
-                                    <h5 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button border-bottom font-weight-bold text-sm"
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                            aria-expanded="false" aria-controls="collapseFour">
-                                            Can I resell the products?
-                                            <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3"
-                                                aria-hidden="true"></i>
-                                            <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3"
-                                                aria-hidden="true"></i>
-                                        </button>
-                                    </h5>
-                                    <div id="collapseFour" class="accordion-collapse collapse"
-                                        aria-labelledby="headingFour" data-bs-parent="#accordionRental">
-                                        <div class="accordion-body text-sm opacity-8">
-                                            I always felt like I could do anything. That’s the main thing people are
-                                            controlled by! Thoughts- their perception of themselves! They're slowed down
-                                            by their perception of themselves. If you're taught you can’t do anything,
-                                            you won’t do anything. I was taught I could do everything.
-                                            <br><br>
-                                            If everything I did failed - which it doesn't, it actually succeeds - just
-                                            the fact that I'm willing to fail is an inspiration. People are so scared to
-                                            lose that they don't even try. Like, one thing people can't say is that I'm
-                                            not trying, and I'm not trying my hardest, and I'm not trying to do the best
-                                            way I know how.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item mb-3">
-                                    <h5 class="accordion-header" id="headingFifth">
-                                        <button class="accordion-button border-bottom font-weight-bold text-sm"
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth"
-                                            aria-expanded="false" aria-controls="collapseFifth">
-                                            Where do I find the shipping details?
-                                            <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3"
-                                                aria-hidden="true"></i>
-                                            <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3"
-                                                aria-hidden="true"></i>
-                                        </button>
-                                    </h5>
-                                    <div id="collapseFifth" class="accordion-collapse collapse"
-                                        aria-labelledby="headingFifth" data-bs-parent="#accordionRental">
-                                        <div class="accordion-body text-sm opacity-8">
-                                            There’s nothing I really wanted to do in life that I wasn’t able to get good
-                                            at. That’s my skill. I’m not really specifically talented at anything except
-                                            for the ability to learn. That’s what I do. That’s what I’m here for. Don’t
-                                            be afraid to be wrong because you can’t learn anything from a compliment.
-                                            I always felt like I could do anything. That’s the main thing people are
-                                            controlled by! Thoughts- their perception of themselves! They're slowed down
-                                            by their perception of themselves. If you're taught you can’t do anything,
-                                            you won’t do anything. I was taught I could do everything.
+                                            Yes you can! You can follow the path that we've created. But if you want to get
+                                            more and download the module for each material. You need joined as member, then
+                                            you can download the module that we've been created.
                                         </div>
                                     </div>
                                 </div>

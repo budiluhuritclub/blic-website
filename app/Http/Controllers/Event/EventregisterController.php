@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Event;
 
 use App\Http\Controllers\Controller;
-use App\Models\Events;
-use Illuminate\Auth\Events\Validated;
+use App\Models\Devcamp;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 
 class EventregisterController extends Controller
 {
@@ -28,12 +28,14 @@ class EventregisterController extends Controller
      */
     public function store(Request $request)
     {
+        $fakultas = ['FTI', 'FIKOM', 'FISIP', 'FT', 'FEB', 'AST'];
+
         $validator = Validator::make($request->all(), [
-            'nama'      =>      'required|min:5',
+            'nama'      =>      'required|min:10',
             'nim'       =>      'required|digits:10',
-            'email'     =>      'required',
-            'no_telp'   =>      'required',
-            'fakultas'  =>      'required',
+            'email'     =>      'required|email',
+            'no_telp'   =>      'required|numeric|digits_between:10,14',
+            'fakultas'  =>      ['required', Rule::in($fakultas)],
         ]);
 
         if ($validator->fails()) {
@@ -42,8 +44,8 @@ class EventregisterController extends Controller
 
         $validated = $validator->validated();
 
-        Events::create([
-            'event'     => "Devcamp 01 : UI/UX",
+        Devcamp::create([
+            'no_batch'  => "1",
             'nim'       => $validated['nim'],
             'nama'      => $validated['nama'],
             'email'     => $validated['email'],
