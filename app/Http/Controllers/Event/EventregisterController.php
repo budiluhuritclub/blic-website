@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Event;
 
 use App\Http\Controllers\Controller;
-use App\Models\Events;
+use App\Models\Devcamp;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
@@ -44,8 +44,8 @@ class EventregisterController extends Controller
 
         $validated = $validator->validated();
 
-        Events::create([
-            'event'     => "Devcamp 01 : UI/UX",
+        Devcamp::create([
+            'no_batch'  => "1",
             'nim'       => $validated['nim'],
             'nama'      => $validated['nama'],
             'email'     => $validated['email'],

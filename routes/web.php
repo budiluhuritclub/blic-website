@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Admin\DevcampController;
+use App\Http\Controllers\Admin\Devcamp\BatchController;
+use App\Http\Controllers\Admin\Devcamp\DevcampController;
 use App\Http\Controllers\Event\EventregisterController;
 use App\Http\Controllers\Event\SuccessController;
 use App\Http\Controllers\Frontend\AboutusController;
@@ -38,6 +39,11 @@ Route::get('/news', [NewsController::class, 'index'])->name('news');
 //onepage
 Route::get('/welcome', [OnepageController::class, 'index'])->name('welcome');
 
+// recruitment
+Route::get('/apply-member', [RegistrationmembersController::class, 'form'])->name('apply-form');
+Route::post('/applying-as-member', [RegistrationmembersController::class, 'apply'])->name('applying-member');
+Route::get('/apply-success', [RegistrationmembersController::class, 'success'])->name('apply-success');
+
 // event
 Route::get('/devcamp-01', [EventregisterController::class, 'index'])->name('register-event');
 Route::post('/devcamp-01/store', [EventregisterController::class, 'store'])->name('register-event-store');
@@ -48,6 +54,8 @@ Route::prefix('admin')->group(function () {
     Route::middleware(['middleware' => 'auth', 'admin'])->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
+        // devcamp
         Route::resource('devcamp', DevcampController::class);
+        Route::resource('batch', BatchController::class);
     });
 });

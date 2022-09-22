@@ -5,18 +5,23 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Events extends Model
+class Devcamp extends Model
 {
     use HasFactory;
 
-    protected $table = 'event';
+    protected $table = 'devcamp';
 
     protected $fillable = [
-        'event',
+        'no_batch',
         'nim',
         'nama',
         'email',
         'no_telp',
         'fakultas'
     ];
+
+    public function batches()
+    {
+        return $this->hasOne(Devcamp::class, 'no_batch', 'batch');
+    }
 }

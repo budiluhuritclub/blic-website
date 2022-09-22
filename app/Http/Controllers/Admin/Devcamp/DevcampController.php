@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin\Devcamp;
 
 use App\Http\Controllers\Controller;
-use App\Models\Events;
+use App\Models\Devcamp;
+use App\Models\DevcampBatch;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DevcampController extends Controller
 {
@@ -15,7 +17,7 @@ class DevcampController extends Controller
      */
     public function index()
     {
-        $items = Events::all();
+        $items = DevcampBatch::all();
 
         return view('pages.admin.devcamp.index', compact('items'));
     }
@@ -49,7 +51,11 @@ class DevcampController extends Controller
      */
     public function show($id)
     {
-        //
+        $title = DevcampBatch::where('id', $id)->first();
+
+        $items = Devcamp::where('no_batch', $id)->get();
+
+        return view('pages.admin.devcamp.show', compact('items', 'title'));
     }
 
     /**

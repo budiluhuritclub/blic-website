@@ -1,7 +1,7 @@
 <!--
 Note:
 
-ini layouts untuk halaman frontend
+ini layouts untuk onepage welcome
 -->
 
 <!DOCTYPE html>

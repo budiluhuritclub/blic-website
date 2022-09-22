@@ -179,7 +179,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <a href="#">
+                        <a href="{{ route('apply-form') }}">
                             <button class="btn btn-primary w-100 mt-4">Register Now</button>
                         </a>
                     </div>

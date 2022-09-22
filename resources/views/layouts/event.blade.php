@@ -1,7 +1,7 @@
 <!--
 Note:
 
-ini layouts untuk halaman admin, manage semua content untuk user
+ini layouts untuk halaman register semua event
 -->
 
 <!DOCTYPE html>
