@@ -87,7 +87,7 @@
 
         <!-- Accounts -->
         <li class="menu-item">
-            <a href="cards-basic.html" class="menu-link">
+            <a href="{{ route('account.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-user"></i>
                 <div data-i18n="Basic">Accounts</div>
             </a>

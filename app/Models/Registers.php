@@ -20,6 +20,7 @@ class Registers extends Model
         'major',
         'interest',
         'field_interest',
-        'reason'
+        'reason',
+        'join_year'
     ];
 }

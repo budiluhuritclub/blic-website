@@ -37,6 +37,8 @@ class RegistrationmembersController extends Controller
 
         $validated = $validator->validated();
 
+        $validated['join_year'] = date("Y");
+
         Registers::create($validated);
 
         return redirect()->route('apply-success');

@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Account\AccountController;
+use App\Http\Controllers\Admin\Account\AccountController;
 use App\Http\Controllers\Admin\Applicant\ApplicantController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\Devcamp\BatchController;
@@ -57,7 +57,7 @@ Route::prefix('admin')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
         // account
-        // Route::resource('account', AccountController::class);
+        Route::resource('account', AccountController::class);
 
         // applicant
         Route::get('/applicant', [ApplicantController::class, 'index'])->name('applicant');

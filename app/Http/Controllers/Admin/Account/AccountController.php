@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin\Account;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
@@ -27,7 +27,7 @@ class AccountController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.admin.account.create');
     }
 
     /**
