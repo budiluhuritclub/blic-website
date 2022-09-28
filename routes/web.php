@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Account\AccountController;
+use App\Http\Controllers\Admin\Applicant\ApplicantController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\Devcamp\BatchController;
 use App\Http\Controllers\Admin\Devcamp\DevcampController;
@@ -53,6 +55,12 @@ Route::get('/devcamp-01/success', [SuccessController::class, 'index'])->name('su
 Route::prefix('admin')->group(function () {
     Route::middleware(['middleware' => 'auth', 'admin'])->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+        // account
+        // Route::resource('account', AccountController::class);
+
+        // applicant
+        Route::get('/applicant', [ApplicantController::class, 'index'])->name('applicant');
 
         // devcamp
         Route::resource('devcamp', DevcampController::class);

@@ -1,23 +1,17 @@
-<footer class="footer pt-3  ">
-    <div class="container-fluid">
-        <div class="row align-items-center justify-content-lg-between">
-            <div class="col-lg-6 mb-lg-0 mb-4">
-                <div class="copyright text-center text-sm text-muted text-lg-start">
-                    ©
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>
-                    <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Rylanristia</a> Jakarta
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                    <li class="nav-item">
-                        <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">User
-                            Guide</a>
-                    </li>
-                </ul>
-            </div>
+<footer class="content-footer footer bg-footer-theme">
+    <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+        <div class="mb-2 mb-md-0">
+            ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            , made with brain by
+            <a href="https://budiluhur.com" class="footer-link fw-bolder">Budiluhur IT Club</a>
+        </div>
+        <div>
+            <a href="https://budiluhur.com" class="footer-link me-4">Documentation</a>
+
+            <a href="https://github.com/budiluhur" class="footer-link me-4">Support</a>
         </div>
     </div>
 </footer>
