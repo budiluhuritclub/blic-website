@@ -32,6 +32,9 @@
                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                             Jurusan
                         </th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                            Periode
+                        </th>
                         <th class="text-secondary opacity-7" width="10%"></th>
                     </tr>
                 </thead>
@@ -46,6 +49,7 @@
                             <td class="ps-4">{{ $item->name }}</td>
                             <td class="ps-4">{{ $item->faculty }}</td>
                             <td class="ps-4">{{ $item->major }}</td>
+                            <td class="ps-4">{{ $item->join_year }}</td>
                             <td class="align-middle">
                                 <a href="javascript:;" class="text-secondary font-weight-bold text-xs" disabled
                                     data-toggle="tooltip" data-original-title="Edit user">
