@@ -6,6 +6,16 @@
 
 @section('content')
     <div class="container-xxl flex-grow-1 container-p-y">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active">Applicant</li>
+            </ol>
+        </nav>
+
         <div class="card p-5">
             <h3>Applicant's member</h3>
             <p>Students that apply to join Budi Luhur IT Club</p>

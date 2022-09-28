@@ -31,6 +31,9 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
+// force redirecting register page
+Route::redirect('/register', '/');
+
 //frontend
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about-us', [AboutusController::class, 'index'])->name('about-us');

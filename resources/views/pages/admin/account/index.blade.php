@@ -6,6 +6,16 @@
 
 @section('content')
     <div class="container-xxl flex-grow-1 container-p-y">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active">Accounts</li>
+            </ol>
+        </nav>
+
         <div class="card p-5">
             <h3>User Account</h3>
             <p>All of members will be shown in here.</p>
@@ -20,7 +30,8 @@
             <table class="table align-items-center mb-0">
                 <thead>
                     <tr>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" width="10%">No</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" width="10%">No
+                        </th>
                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">NIM</th>
                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama</th>
                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>

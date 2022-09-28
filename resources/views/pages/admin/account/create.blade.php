@@ -24,7 +24,7 @@
             <form action="{{ route('account.store') }}" method="POST">
                 @csrf
                 <div class="mb-3">
-                    <input type="text" class="form-control @error('nim') is-invalid @enderror" placeholder="NIM"
+                    <input type="number" class="form-control @error('nim') is-invalid @enderror" placeholder="NIM"
                         aria-label="nim" name="nim">
                     @error('nim')
                         <span class="invalid-feedback" role="alert">
