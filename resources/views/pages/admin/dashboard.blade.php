@@ -38,7 +38,7 @@
                             <div class="card-body">
                                 <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="/admin-template/assets/img/icons/unicons/chart-success.png"
+                                        <img src="/public/admin-template/assets/img/icons/unicons/chart-success.png"
                                             alt="chart success" class="rounded" />
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@
                             <div class="card-body">
                                 <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="/admin-template/assets/img/icons/unicons/wallet-info.png"
+                                        <img src="/public/admin-template/assets/img/icons/unicons/wallet-info.png"
                                             alt="Credit Card" class="rounded" />
                                     </div>
                                 </div>
