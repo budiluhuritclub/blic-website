@@ -1,2 +1,2 @@
-<link rel="stylesheet" href="{{ url('./css/styles.css') }}">
-<link rel="stylesheet" href="{{ url('./css/preloader.css') }}">
+<link rel="stylesheet" href="{{ url('/public/css/styles.css') }}">
+<link rel="stylesheet" href="{{ url('/public/css/preloader.css') }}">
