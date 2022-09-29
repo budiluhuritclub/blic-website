@@ -1,6 +1,6 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand demo">
-        <a href="{{ route('dashboard-admin') }}" class="app-brand-link">
+        <a href="{{ route('dashboard-elearning') }}" class="app-brand-link">
             <span class="app-brand-logo demo">
                 <img src="{{ url('/public/images/JARINGAN1.png') }}" alt="" width="40px">
             </span>
@@ -17,21 +17,21 @@
     <ul class="menu-inner py-1">
         <!-- Dashboard -->
         <li class="menu-item active">
-            <a href="{{ route('dashboard-admin') }}" class="menu-link">
+            <a href="{{ route('dashboard-elearning') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
         </li>
 
         <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Data center</span>
+            <span class="menu-header-text">Modul</span>
         </li>
 
-        <!-- Cards -->
+        <!-- Modul -->
         <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">Materi</div>
+                <div data-i18n="Basic">Modul</div>
             </a>
         </li>
 
@@ -43,53 +43,43 @@
             </a>
         </li>
 
-        <!-- Members -->
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">E-Class</span>
+        </li>
+
+        <!-- Training -->
         <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-group"></i>
-                <div data-i18n="Basic">Members</div>
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Training</div>
             </a>
         </li>
 
-        <div class="divider">
-            <div class="divider-text">Open recruitment</div>
-        </div>
-
-        <!-- Members -->
+        <!-- Learning -->
         <li class="menu-item">
-            <a href="{{ route('applicant') }}" class="menu-link">
+            <a href="javascript;;" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Learning</div>
+            </a>
+        </li>
+
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Showcase</span>
+        </li>
+
+        <!-- Project -->
+        <li class="menu-item">
+            <a href="javascript;;" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Basic">Applicant</div>
+                <div data-i18n="Basic">Project</div>
             </a>
         </li>
 
-        <!-- Event -->
-        <li class="menu-header small text-uppercase"><span class="menu-header-text">Events</span></li>
-
-        <!-- Devcamp -->
+        <!-- Sertifikat -->
         <li class="menu-item">
-            <a href="{{ route('devcamp.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bxs-news"></i>
-                <div data-i18n="Basic">Devcamp</div>
-            </a>
-        </li>
-
-        <!-- Technofest -->
-        <li class="menu-item">
-            <a href="cards-basic.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bxs-invader"></i>
-                <div data-i18n="Basic">Technofest</div>
-            </a>
-        </li>
-
-        <!-- Components -->
-        <li class="menu-header small text-uppercase"><span class="menu-header-text">Account center</span></li>
-
-        <!-- Accounts -->
-        <li class="menu-item">
-            <a href="{{ route('account.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bxs-user"></i>
-                <div data-i18n="Basic">Accounts</div>
+            <a href="javascript;;" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Basic">Sertificate</div>
             </a>
         </li>
     </ul>

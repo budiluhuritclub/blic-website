@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\Admin\Account\AccountController;
 use App\Http\Controllers\Admin\Applicant\ApplicantController;
-use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\Devcamp\BatchController;
 use App\Http\Controllers\Admin\Devcamp\DevcampController;
+use App\Http\Controllers\Elearning\DashboardController as ElearningDashboardController;
+use App\Http\Controllers\Elearning\ProfileController;
 use App\Http\Controllers\Event\EventregisterController;
 use App\Http\Controllers\Event\SuccessController;
 use App\Http\Controllers\Frontend\AboutusController;
@@ -31,8 +33,10 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
-// force redirecting register page
+// redirecting
 Route::redirect('/register', '/');
+Route::redirect('/elearning', '/elearning/dashboard');
+Route::redirect('/admin', 'admin/dashboard');
 
 //frontend
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -54,10 +58,22 @@ Route::get('/devcamp-01', [EventregisterController::class, 'index'])->name('regi
 Route::post('/devcamp-01/store', [EventregisterController::class, 'store'])->name('register-event-store');
 Route::get('/devcamp-01/success', [SuccessController::class, 'index'])->name('success-register-event');
 
+// elearning
+Route::prefix('elearning')->group(function () {
+    Route::middleware(['middleware' => 'auth', 'member'])->group(function () {
+        // dashboard
+        Route::get('/dashboard', [ElearningDashboardController::class, 'index'])->name('dashboard-elearning');
+
+        // account
+        Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
+        Route::get('/setting', [ProfileController::class, 'setting'])->name('setting');
+    });
+});
+
 //admin
 Route::prefix('admin')->group(function () {
     Route::middleware(['middleware' => 'auth', 'admin'])->group(function () {
-        Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+        Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard-admin');
 
         // account
         Route::resource('account', AccountController::class);

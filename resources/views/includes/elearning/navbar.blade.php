@@ -10,9 +10,7 @@
         <!-- Search -->
         <div class="navbar-nav align-items-center">
             <div class="nav-item d-flex align-items-center">
-                <i class="bx bx-search fs-4 lh-0"></i>
-                <input type="text" class="form-control border-0 shadow-none"
-                    placeholder="Search... but still not working" aria-label="Search..." />
+                Elearning budiluhuritclub.com
             </div>
         </div>
         <!-- /Search -->
@@ -60,12 +58,15 @@
                             <span class="align-middle">Settings</span>
                         </a>
                     </li>
-                    <li>
-                        <a class="dropdown-item" href="{{ route('dashboard-elearning') }}">
-                            <i class="bx bx-cog me-2"></i>
-                            <span class="align-middle">Elearning</span>
-                        </a>
-                    </li>
+
+                    @if (Auth::user()->level == 'admin')
+                        <li>
+                            <a class="dropdown-item" href="{{ route('dashboard-admin') }}">
+                                <i class="bx bx-cog me-2"></i>
+                                <span class="align-middle">Admin page</span>
+                            </a>
+                        </li>
+                    @endif
                     <li>
                         <div class="dropdown-divider"></div>
                     </li>

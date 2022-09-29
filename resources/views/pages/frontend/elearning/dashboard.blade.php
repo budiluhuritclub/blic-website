@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.elearning')
 
 @section('title')
-    Admin panel - Budi Luhur IT Club
+    Dashboard Elearning - Budi Luhur IT Club
 @endsection
 
 @section('content')
@@ -14,7 +14,8 @@
                             <div class="card-body">
                                 <h5 class="card-title text-primary">Welcome back {{ Auth::user()->name }}! 🎉</h5>
                                 <p class="mb-4">
-                                    You are administrator of this website. You can manage anything as you want!
+                                    Start to learn, explore the field you're intrested end being a hero from zero. Let's
+                                    grow together!
                                 </p>
 
                                 <a href="javascript:;" class="btn btn-sm btn-outline-primary">View

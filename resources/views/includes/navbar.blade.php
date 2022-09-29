@@ -61,7 +61,13 @@
                         <ul class="dropdown-menu" style="overflow: hidden; margin-top: 13px !important;">
                             @if (Auth::user()->type == 'student')
                                 <li>
-                                    <a class="dropdown-item py-2" href="#">
+                                    <a class="dropdown-item py-2" href="{{ route('profile') }}">
+                                        <i class="bi bi-person me-1"></i>
+                                        My profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item py-2" href="{{ route('dashboard-elearning') }}">
                                         <i class="bi bi-mortarboard me-1"></i>
                                         E-learning
                                     </a>
@@ -69,7 +75,7 @@
                             @endif
                             @if (Auth::user()->level == 'admin')
                                 <li>
-                                    <a class="dropdown-item py-2" href="{{ route('dashboard') }}">
+                                    <a class="dropdown-item py-2" href="{{ route('dashboard-admin') }}">
                                         <i class="bi bi-speedometer2 me-1"></i>
                                         Admin page
                                     </a>
