@@ -66,7 +66,9 @@ Route::prefix('elearning')->group(function () {
 
         // account
         Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
-        Route::get('/setting', [ProfileController::class, 'setting'])->name('setting');
+        Route::get('/edit', [ProfileController::class, 'edit'])->name('edit');
+        Route::get('/security', [ProfileController::class, 'security'])->name('security');
+        Route::post('/security/changing-password', [ProfileController::class, 'changepassword'])->name('changepassword');
     });
 });
 

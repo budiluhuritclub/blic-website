@@ -2,7 +2,7 @@
     <div class="app-brand demo">
         <a href="{{ route('dashboard-admin') }}" class="app-brand-link">
             <span class="app-brand-logo demo">
-                <img src="{{ url('./images/JARINGAN1.png') }}" alt="" width="40px">
+                <img src="{{ url('/public/images/JARINGAN1.png') }}" alt="" width="40px">
             </span>
             <span class="app-brand-text menu-text fw-bolder ms-2">Budiluhur IT Club</span>
         </a>

@@ -1,7 +1,7 @@
 @extends('layouts.elearning')
 
 @section('title')
-    Profile - Elearning Budi Luhur IT Club
+    Edit - Elearning Budi Luhur IT Club
 @endsection
 
 @section('content')
@@ -13,9 +13,9 @@
                     <a href="#">Dashboard</a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a href="#">Profile</a>
+                    <a href="#">Account</a>
                 </li>
-                <li class="breadcrumb-item active">Account</li>
+                <li class="breadcrumb-item active">Edit</li>
             </ol>
         </nav>
 
@@ -23,12 +23,16 @@
             <div class="col-md-12">
                 <ul class="nav nav-pills flex-column flex-md-row mb-3">
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('profile') }}"><i class="bx bx-user me-1"></i>
-                            Account</a>
+                        <a class="nav-link" href="{{ route('profile') }}"><i class="bx bx-user me-1"></i>
+                            Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('setting') }}"><i class="bx bx-bell me-1"></i>
-                            Setting</a>
+                        <a class="nav-link active" href="{{ route('edit') }}"><i class="bx bx-edit me-1"></i>
+                            Edit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('security') }}"><i class="bx bx-shield-quarter me-1"></i>
+                            Security</a>
                     </li>
                 </ul>
 

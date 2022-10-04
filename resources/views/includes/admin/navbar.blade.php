@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ route('setting') }}">
+                        <a class="dropdown-item" href="{{ route('security') }}">
                             <i class="bx bx-cog me-2"></i>
                             <span class="align-middle">Settings</span>
                         </a>
