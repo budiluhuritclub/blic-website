@@ -62,7 +62,7 @@
                     @if (Auth::user()->level == 'admin')
                         <li>
                             <a class="dropdown-item" href="{{ route('dashboard-admin') }}">
-                                <i class="bx bx-cog me-2"></i>
+                                <i class="bx bx-crown me-2"></i>
                                 <span class="align-middle">Admin page</span>
                             </a>
                         </li>

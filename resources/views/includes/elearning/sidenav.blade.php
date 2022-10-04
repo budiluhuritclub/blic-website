@@ -50,7 +50,7 @@
         <!-- Training -->
         <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <i class="menu-icon tf-icons bx bxs-book-alt"></i>
                 <div data-i18n="Basic">Training</div>
             </a>
         </li>
@@ -58,7 +58,7 @@
         <!-- Learning -->
         <li class="menu-item">
             <a href="javascript;;" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <i class="menu-icon tf-icons bx bx-library"></i>
                 <div data-i18n="Basic">Learning</div>
             </a>
         </li>
@@ -78,7 +78,7 @@
         <!-- Sertifikat -->
         <li class="menu-item">
             <a href="javascript;;" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-file"></i>
+                <i class="menu-icon tf-icons bx bx-award"></i>
                 <div data-i18n="Basic">Sertificate</div>
             </a>
         </li>

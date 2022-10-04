@@ -27,54 +27,53 @@
                 <a href="javascript;;" class="text-primary font-weight-bold text-xs mt-2 ms-auto">Add new
                     applicant</a>
             </div>
-            <table class="table align-items-center mb-0">
-                <thead>
-                    <tr>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" width="5%">No
-                        </th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">NIM
-                        </th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama
-                        </th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                            Fakultas
-                        </th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                            Jurusan
-                        </th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                            Periode
-                        </th>
-                        <th class="text-secondary opacity-7" width="10%"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @php
-                        $no = 1;
-                    @endphp
-                    @foreach ($items as $item)
+            <div class="table-responsive">
+                <table class="table align-items-center mb-0">
+                    <thead>
                         <tr>
-                            <td class="ps-4">{{ $no++ }}</td>
-                            <td class="ps-4">{{ $item->nim }}</td>
-                            <td class="ps-4">{{ $item->name }}</td>
-                            <td class="ps-4">{{ $item->faculty }}</td>
-                            <td class="ps-4">{{ $item->major }}</td>
-                            <td class="ps-4">{{ $item->join_year }}</td>
-                            <td class="align-middle">
-                                <a href="javascript:;" class="text-secondary font-weight-bold text-xs" disabled
-                                    data-toggle="tooltip" data-original-title="Edit user">
-                                    Edit
-                                </a>
-                                <a href="{{ route('devcamp.show', $item->id) }}"
-                                    class="text-secondary font-weight-bold text-xs ms-3" disabled data-toggle="tooltip"
-                                    data-original-title="Edit user">
-                                    Detail
-                                </a>
-                            </td>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" width="5%">
+                                No
+                            </th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">NIM
+                            </th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama
+                            </th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Fakultas
+                            </th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Jurusan
+                            </th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Periode
+                            </th>
+                            <th class="text-secondary opacity-7" width="10%"></th>
                         </tr>
-                    @endforeach
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @php
+                            $no = 1;
+                        @endphp
+                        @foreach ($items as $item)
+                            <tr>
+                                <td class="ps-4">{{ $no++ }}</td>
+                                <td class="ps-4">{{ $item->nim }}</td>
+                                <td class="ps-4">{{ $item->name }}</td>
+                                <td class="ps-4">{{ $item->faculty }}</td>
+                                <td class="ps-4">{{ $item->major }}</td>
+                                <td class="ps-4">{{ $item->join_year }}</td>
+                                <td class="align-middle">
+                                    <a href="{{ route('detail-applicant', $item->id) }}"
+                                        class="text-secondary font-weight-bold text-xs ms-3" disabled data-toggle="tooltip"
+                                        data-original-title="Detail">
+                                        Detail
+                                    </a>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 @endsection

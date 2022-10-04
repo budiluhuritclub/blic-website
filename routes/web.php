@@ -80,6 +80,7 @@ Route::prefix('admin')->group(function () {
 
         // applicant
         Route::get('/applicant', [ApplicantController::class, 'index'])->name('applicant');
+        Route::get('/applicant/detail/{id}', [ApplicantController::class, 'detail'])->name('detail-applicant');
 
         // devcamp
         Route::resource('devcamp', DevcampController::class);

@@ -44,7 +44,7 @@
                     <tbody>
                         @foreach ($items as $item)
                             <tr>
-                                <td class="ps-4">{{ $item->no_batch }}</td>
+                                <td class="ps-4">{{ $item->batches->title }}</td>
                                 <td class="ps-4">{{ $item->nim }}</td>
                                 <td class="ps-4">{{ $item->nama }}</td>
                                 <td class="ps-4">{{ $item->email }}</td>

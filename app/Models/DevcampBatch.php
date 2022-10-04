@@ -17,6 +17,6 @@ class DevcampBatch extends Model
 
     public function devcamp()
     {
-        return $this->belongsTo(Devcamp::class, 'batch', 'no_batch');
+        return $this->belongsTo(DevcampBatch::class, 'no_batch', 'batch');
     }
 }

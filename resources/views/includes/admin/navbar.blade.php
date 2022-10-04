@@ -62,7 +62,7 @@
                     </li>
                     <li>
                         <a class="dropdown-item" href="{{ route('dashboard-elearning') }}">
-                            <i class="bx bx-cog me-2"></i>
+                            <i class="bx bxs-graduation me-2"></i>
                             <span class="align-middle">Elearning</span>
                         </a>
                     </li>
