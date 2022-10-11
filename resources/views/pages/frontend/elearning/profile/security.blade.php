@@ -43,12 +43,11 @@
                         <p class="mb-0">Once you change your password, there is no going back. Please be certain.</p>
                     </div>
                 </div>
-                @include('includes.alerts')
                 <form id="form-security" method="POST" action="{{ route('changepassword') }}">
                     @csrf
                     <div class="mb-3">
                         <label for="oldpassword" class="form-label">Old password</label>
-                        <input class="form-control" type="password" id="oldpassword" name="oldpassword" autofocus
+                        <input class="form-control " type="password" id="oldpassword" name="oldpassword" autofocus
                             placeholder="type your current password" />
                     </div>
                     <div class="mb-3 col-md-12">

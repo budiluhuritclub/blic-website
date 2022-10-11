@@ -24,8 +24,13 @@
         <div class="card p-5 mt-4">
             <div class="d-flex">
                 <h6>Applicants</h6>
-                <a href="javascript;;" class="text-primary font-weight-bold text-xs mt-2 ms-auto">Add new
-                    applicant</a>
+                <div class="group ms-auto">
+                    <a href="{{ route('generate-account') }}"
+                        class="text-primary font-weight-bold text-xs mt-2 me-3">Generate
+                        Account</a>
+                    <a href="javascript;;" class="text-primary font-weight-bold text-xs mt-2">Add new
+                        applicant</a>
+                </div>
             </div>
             <div class="table-responsive">
                 <table class="table align-items-center mb-0">

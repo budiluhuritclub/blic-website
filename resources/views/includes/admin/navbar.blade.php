@@ -20,7 +20,7 @@
         <ul class="navbar-nav flex-row align-items-center ms-auto">
 
             <!-- User -->
-            <p class="mt-3 me-2 d-none d-sm-block">Rylanristia</p>
+            <p class="mt-3 me-2 d-none d-sm-block">{{ Auth::user()->name }}</p>
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
@@ -39,8 +39,8 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <span class="fw-semibold d-block">John Doe</span>
-                                    <small class="text-muted">Admin</small>
+                                    <span class="fw-semibold d-block">{{ Auth::user()->name }}</span>
+                                    <small class="text-muted">{{ Auth::user()->level }}</small>
                                 </div>
                             </div>
                         </a>

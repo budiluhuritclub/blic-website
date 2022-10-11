@@ -27,7 +27,7 @@
             <span class="menu-header-text">Data center</span>
         </li>
 
-        <!-- Cards -->
+        <!-- Materi -->
         <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
@@ -48,6 +48,14 @@
             <a href="javascript:void(0)" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-group"></i>
                 <div data-i18n="Basic">Members</div>
+            </a>
+        </li>
+
+        <!-- Division -->
+        <li class="menu-item">
+            <a href="{{ route('all-division') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-user-badge"></i>
+                <div data-i18n="Basic">Division</div>
             </a>
         </li>
 

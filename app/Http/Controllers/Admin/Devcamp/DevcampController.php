@@ -55,8 +55,6 @@ class DevcampController extends Controller
 
         $items = Devcamp::with('batches')->where('no_batch', $id)->get();
 
-        // dd($items);
-
         return view('pages.admin.devcamp.show', compact('items', 'title'));
     }
 
