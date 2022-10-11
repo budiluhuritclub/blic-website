@@ -1,70 +1,104 @@
-<aside
-    class="sidenav bg-gray-600 navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
-    id="sidenav-main">
-    <div class="sidenav-header">
-        <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
-            aria-hidden="true" id="iconSidenav"></i>
-        <a class="navbar-brand m-0" href="{{ route('dashboard') }}" target="_blank">
-            <span class="ms-1 font-weight-bold">Budi Luhur IT Club</span>
+<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+    <div class="app-brand demo">
+        <a href="{{ route('dashboard-admin') }}" class="app-brand-link">
+            <span class="app-brand-logo demo">
+                <img src="{{ url('/public/images/JARINGAN1.png') }}" alt="" width="40px">
+            </span>
+            <span class="app-brand-text menu-text fw-bolder ms-2">Budiluhur IT Club</span>
+        </a>
+
+        <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+            <i class="bx bx-chevron-left bx-sm align-middle"></i>
         </a>
     </div>
-    <hr class="horizontal dark mt-0">
-    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('dashboard') }}">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Dashboard</span>
-                </a>
-            </li>
-            <li class="nav-item mt-3">
-                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Data center</h6>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Materi</span>
-                </a>
-            </li>
-            <li class="nav-item mt-3">
-                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Events</h6>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="{{ route('devcamp.index') }}">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Devcamp</span>
-                </a>
-            </li>
-            <li class="nav-item mt-3">
-                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account center</h6>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="bi bi-person-fill" style="color:aqua"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Account</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="bi bi-door-open-fill" style="color: red"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Log out</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+
+    <div class="menu-inner-shadow"></div>
+
+    <ul class="menu-inner py-1">
+        <!-- Dashboard -->
+        <li class="menu-item active">
+            <a href="{{ route('dashboard-admin') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+            </a>
+        </li>
+
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Data center</span>
+        </li>
+
+        <!-- Materi -->
+        <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Materi</div>
+            </a>
+        </li>
+
+        <!-- Roadmaps -->
+        <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-stats"></i>
+                <div data-i18n="Basic">Roadmaps</div>
+            </a>
+        </li>
+
+        <!-- Members -->
+        <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-group"></i>
+                <div data-i18n="Basic">Members</div>
+            </a>
+        </li>
+
+        <!-- Division -->
+        <li class="menu-item">
+            <a href="{{ route('all-division') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-user-badge"></i>
+                <div data-i18n="Basic">Division</div>
+            </a>
+        </li>
+
+        <div class="divider">
+            <div class="divider-text">Open recruitment</div>
+        </div>
+
+        <!-- Members -->
+        <li class="menu-item">
+            <a href="{{ route('applicant') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Basic">Applicant</div>
+            </a>
+        </li>
+
+        <!-- Event -->
+        <li class="menu-header small text-uppercase"><span class="menu-header-text">Events</span></li>
+
+        <!-- Devcamp -->
+        <li class="menu-item">
+            <a href="{{ route('devcamp.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-news"></i>
+                <div data-i18n="Basic">Devcamp</div>
+            </a>
+        </li>
+
+        <!-- Technofest -->
+        <li class="menu-item">
+            <a href="cards-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-invader"></i>
+                <div data-i18n="Basic">Technofest</div>
+            </a>
+        </li>
+
+        <!-- Components -->
+        <li class="menu-header small text-uppercase"><span class="menu-header-text">Account center</span></li>
+
+        <!-- Accounts -->
+        <li class="menu-item">
+            <a href="{{ route('account.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-user"></i>
+                <div data-i18n="Basic">Accounts</div>
+            </a>
+        </li>
+    </ul>
 </aside>

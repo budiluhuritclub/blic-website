@@ -17,7 +17,18 @@ class BatchController extends Controller
      */
     public function create()
     {
-        return view('pages.admin.devcamp.create');
+        $batch = DevcampBatch::orderBy('batch', 'desc')->first();
+        $lastBatch = 1;
+
+        if ($batch == null) {
+            $lastBatch = $batch['batch'];
+            $lastBatch++;
+        } else {
+            $lastBatch = $batch['batch'];
+            $lastBatch++;
+        }
+
+        return view('pages.admin.devcamp.create', compact('lastBatch'));
     }
 
     /**
@@ -28,12 +39,15 @@ class BatchController extends Controller
      */
     public function store(Request $request)
     {
-        $batch = DevcampBatch::orderBy('id', 'desc')->first();
+        $batch = DevcampBatch::orderBy('batch', 'desc')->first();
         $lastBatch = 1;
 
-        if ($batch != null) {
+        if ($batch == null) {
             $lastBatch = $batch['batch'];
-            $lastBatch = $lastBatch + 1;
+            $lastBatch++;
+        } else {
+            $lastBatch = $batch['batch'];
+            $lastBatch++;
         }
 
         $validator = Validator::make($request->all(), [

@@ -24,7 +24,7 @@ class RegistrationmembersController extends Controller
             'email'             =>      'required|email',
             'nim'               =>      'required|digits:10',
             'phone_number'      =>      'required|numeric|digits_between:10,14',
-            'faculty'           =>      ['required', Rule::in($fakultas)],
+            'faculty'           =>      Rule::in($fakultas),
             'major'             =>      'required|min:5',
             'interest'          =>      'required',
             'field_interest'    =>      'required',
@@ -36,6 +36,8 @@ class RegistrationmembersController extends Controller
         }
 
         $validated = $validator->validated();
+
+        $validated['join_year'] = date("Y");
 
         Registers::create($validated);
 

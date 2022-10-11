@@ -22,6 +22,6 @@ class Devcamp extends Model
 
     public function batches()
     {
-        return $this->hasOne(Devcamp::class, 'no_batch', 'batch');
+        return $this->hasOne(DevcampBatch::class, 'batch', 'no_batch');
     }
 }

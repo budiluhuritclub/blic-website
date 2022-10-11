@@ -53,7 +53,7 @@ class DevcampController extends Controller
     {
         $title = DevcampBatch::where('id', $id)->first();
 
-        $items = Devcamp::where('no_batch', $id)->get();
+        $items = Devcamp::with('batches')->where('no_batch', $id)->get();
 
         return view('pages.admin.devcamp.show', compact('items', 'title'));
     }

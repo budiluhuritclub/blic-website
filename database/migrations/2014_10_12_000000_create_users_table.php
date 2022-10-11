@@ -24,8 +24,9 @@ return new class extends Migration
             $table->string('type')->default('student');
             $table->string('level')->default('user');
             $table->string('no_telp')->nullable();
-            $table->string('fakultas')->nullable();
-            $table->string('program_studi')->nullable();
+            $table->string('faculty')->nullable();
+            $table->string('major')->nullable();
+            $table->longText('address')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

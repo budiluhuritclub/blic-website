@@ -1,82 +1,85 @@
-<!--
-Note:
-
-ini layouts untuk halaman admin, manage semua content untuk user
--->
-
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
+    data-assets-path="/public/admin-template/assets/" data-template="vertical-menu-template-free">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ url('/public/template/assets/img/apple-icon.png') }}">
-    <link rel="icon" type="image/png" href="{{ url('/public/images/favicon.ico') }}">
-    <title>
-        @yield('title')
-    </title>
-    @include('includes.admin.styles')
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>@yield('title')</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico" />
+
+    <!-- Page CSS -->
+    @include('includes.elearning.styles')
+
+    <!-- Helpers -->
+    <script src="{{ url('/public/admin-template/assets/vendor/js/helpers.js') }}"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="{{ url('/public/admin-template/assets/js/config.js') }}"></script>
 </head>
 
-<body class="g-sidenav-show dark-version bg-gray-600">
-    {{-- logoutmodal --}}
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="logoutModalLabel" style="color: #323232 !important">Log out
-                        confirmation</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+<body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
+
+            @include('includes.elearning.sidenav')
+            <!-- / Menu -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+
+                <!-- alert -->
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <h6 class="alert-heading d-flex align-items-center fw-bold mb-1">Im sorry :)</h6>
+                    <p class="mb-0">This page is under development. So you will probably seeing the unfinish or trash
+                        content. </p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                     </button>
                 </div>
-                <div class="modal-body" style="color:#323232">
-                    If you click logout, you're need to login again to manage the library information
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <form action="{{ url('logout') }}" method="POST">
-                        @csrf
 
-                        <a class="" href=" {{ route('logout') }}">
-                            <button class="btn btn-primary " type="submit">
-                                Logout
-                            </button>
-                        </a>
-                    </form>
+                <!-- Navbar -->
+
+                @include('includes.elearning.navbar')
+
+                <!-- / Navbar -->
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Content -->
+
+                    @yield('content')
+                    <!-- / Content -->
+
+                    <!-- Footer -->
+                    @include('includes.elearning.footer')
+                    <!-- / Footer -->
+
+                    <div class="content-backdrop fade"></div>
                 </div>
+                <!-- Content wrapper -->
             </div>
+            <!-- / Layout page -->
         </div>
+
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
     </div>
-    <div class="min-height-300 bg-primary position-absolute w-100"></div>
-    @include('includes.admin.sidenav')
-    <main class="main-content position-relative border-radius-lg ">
-        <!-- Navbar -->
-        @include('includes.admin.navbar')
-        <!-- End Navbar -->
-        <div class="container-fluid py-4">
+    <!-- / Layout wrapper -->
 
-            <!-- start the content from here  -->
-            @yield('content')
-            <!-- end the content here -->
-            @include('includes.admin.footer')
-        </div>
-    </main>
-    @include('includes.admin.scripts')
-    <script>
-        // $(document).ready(function(){
-        // 	$('div#loading').removeAttr('id');
-        // });
-        var preloader = document.getElementById("preloader");
-        // window.addEventListener('load', function() {
-        //     preloader.style.display = 'none';
-        // })
+    @include('includes.elearning.scripts')
 
-        function preLoader() {
-            preloader.style.display = 'none';
-        };
-    </script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>
