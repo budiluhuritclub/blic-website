@@ -40,8 +40,8 @@
                 <!-- Account -->
                 <div class="card-body">
                     <div class="d-flex align-items-start align-items-sm-center gap-4">
-                        <img src="{{ url('./admin-template/assets/img/avatars/1.png') }}" alt="user-avatar"
-                            class="d-block rounded" height="100" width="100" id="uploadedAvatar" />
+                        <img src="{{ url('/public/images/default-profile.jpg') }}" alt="user-avatar" class="d-block rounded"
+                            height="100" width="100" id="uploadedAvatar" />
                         <div>
                             <h3>{{ Auth::user()->name }}</h3>
                             @if ($totaldivision == 0 || $totaldivision == null)
