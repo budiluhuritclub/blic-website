@@ -24,10 +24,10 @@
                 <a class="nav-link" href="{{ route('profile') }}"><i class="bx bx-user me-1"></i>
                     Profile</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link" href="{{ route('edit') }}"><i class="bx bx-edit me-1"></i>
                     Edit</a>
-            </li>
+            </li> --}}
             <li class="nav-item">
                 <a class="nav-link active" href="{{ route('security') }}"><i class="bx bx-shield-quarter me-1"></i>
                     Security</a>
