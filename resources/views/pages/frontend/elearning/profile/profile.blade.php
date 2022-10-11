@@ -79,6 +79,14 @@
                             <tr>
                                 <th>Email</th>
                                 <td>: {{ Auth::user()->email }}</td>
+                                <th>Faculty</th>
+                                <td>: {{ Auth::user()->faculty }}</td>
+                            </tr>
+                            <tr>
+                                <th>Major</th>
+                                <td>: {{ Auth::user()->major }}</td>
+                                <th>Phone</th>
+                                <td>: {{ Auth::user()->no_telp }}</td>
                             </tr>
                         </tbody>
                     </table>
