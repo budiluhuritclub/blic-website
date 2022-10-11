@@ -41,7 +41,7 @@ class ApplicantController extends Controller
                     'password' => Hash::make('codename12345'),
                     'level' => 'user',
                     'type' => 'student',
-                    'phone_number' => $applicant->phone_number,
+                    'no_telp' => $applicant->phone_number,
                     'faculty' => $applicant->faculty,
                     'major' => $applicant->major,
                     'angkatan' => $applicant->join_year
