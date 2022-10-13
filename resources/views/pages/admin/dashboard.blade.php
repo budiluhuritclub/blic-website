@@ -69,74 +69,84 @@
         <!-- statistik -->
         <div class="row">
             <div class="col-lg-4 col-md-12 col-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                                <img src="/public/admin-template/assets/img/icons/unicons/chart-success.png"
-                                    alt="chart success" class="rounded" />
+                <a href="{{ route('web-programming-detail') }}">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title d-flex align-items-start justify-content-between">
+                                <div class="avatar flex-shrink-0">
+                                    <img src="/public/admin-template/assets/img/icons/unicons/chart-success.png"
+                                        alt="chart success" class="rounded" />
+                                </div>
                             </div>
+                            <span class="fw-semibold d-block mb-1">Web programming</span>
+                            <h3 class="card-title mb-4">{{ $webprogramming }}</h3>
                         </div>
-                        <span class="fw-semibold d-block mb-1">Web programming</span>
-                        <h3 class="card-title mb-4">{{ $webprogramming }}</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-12 col-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                                <img src="/public/admin-template/assets/img/icons/unicons/chart-success.png"
-                                    alt="chart success" class="rounded" />
+                <a href="{{ route('mobile-programming-detail') }}">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title d-flex align-items-start justify-content-between">
+                                <div class="avatar flex-shrink-0">
+                                    <img src="/public/admin-template/assets/img/icons/unicons/chart-success.png"
+                                        alt="chart success" class="rounded" />
+                                </div>
                             </div>
+                            <span class="fw-semibold d-block mb-1">Mobile programming</span>
+                            <h3 class="card-title mb-4">{{ $mobileprogramming }}</h3>
                         </div>
-                        <span class="fw-semibold d-block mb-1">Mobile programming</span>
-                        <h3 class="card-title mb-4">{{ $mobileprogramming }}</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-12 col-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                                <img src="/public/admin-template/assets/img/icons/unicons/chart-success.png"
-                                    alt="chart success" class="rounded" />
+                <a href="{{ route('cyber-security-detail') }}">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title d-flex align-items-start justify-content-between">
+                                <div class="avatar flex-shrink-0">
+                                    <img src="/public/admin-template/assets/img/icons/unicons/chart-success.png"
+                                        alt="chart success" class="rounded" />
+                                </div>
                             </div>
+                            <span class="fw-semibold d-block mb-1">Cyber security</span>
+                            <h3 class="card-title mb-4">{{ $cybersecurity }}</h3>
                         </div>
-                        <span class="fw-semibold d-block mb-1">Cyber security</span>
-                        <h3 class="card-title mb-4">{{ $cybersecurity }}</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-12 col-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                                <img src="/public/admin-template/assets/img/icons/unicons/wallet-info.png" alt="Credit Card"
-                                    class="rounded" />
+                <a href="{{ route('uiux-detail') }}">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title d-flex align-items-start justify-content-between">
+                                <div class="avatar flex-shrink-0">
+                                    <img src="/public/admin-template/assets/img/icons/unicons/wallet-info.png"
+                                        alt="Credit Card" class="rounded" />
+                                </div>
                             </div>
+                            <span>User interface and experience</span>
+                            <h3 class="card-title text-nowrap mb-4">{{ $uiux }}</h3>
                         </div>
-                        <span>User interface and experience</span>
-                        <h3 class="card-title text-nowrap mb-4">{{ $uiux }}</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-12 col-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                                <img src="/public/admin-template/assets/img/icons/unicons/wallet-info.png" alt="Credit Card"
-                                    class="rounded" />
+                <a href="{{ route('data-mining-detail') }}">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title d-flex align-items-start justify-content-between">
+                                <div class="avatar flex-shrink-0">
+                                    <img src="/public/admin-template/assets/img/icons/unicons/wallet-info.png"
+                                        alt="Credit Card" class="rounded" />
+                                </div>
                             </div>
+                            <span>Data mining</span>
+                            <h3 class="card-title text-nowrap mb-4">{{ $datamining }}</h3>
                         </div>
-                        <span>Data mining</span>
-                        <h3 class="card-title text-nowrap mb-4">{{ $datamining }}</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-12 col-4 mb-4">
                 <div class="card">
