@@ -20,4 +20,9 @@ class DivMember extends Model
     {
         return $this->belongsTo(Division::class, 'kode_divisi', 'kode');
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'nim', 'nim');
+    }
 }
