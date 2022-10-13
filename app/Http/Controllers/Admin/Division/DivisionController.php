@@ -93,16 +93,16 @@ class DivisionController extends Controller
 
     public function cybersecurityDetail()
     {
-        $items = DivMember::with('user')->where('kode_divisi', '4')->get();
-        $divisi = Division::where('kode', '4')->first();
+        $items = DivMember::with('user')->where('kode_divisi', '5')->get();
+        $divisi = Division::where('kode', '5')->first();
 
         return view('pages.admin.division.detail', compact('items', 'divisi'));
     }
 
     public function dataminingDetail()
     {
-        $items = DivMember::with('user')->where('kode_divisi', '5')->get();
-        $divisi = Division::where('kode', '5')->first();
+        $items = DivMember::with('user')->where('kode_divisi', '4')->get();
+        $divisi = Division::where('kode', '4')->first();
 
         return view('pages.admin.division.detail', compact('items', 'divisi'));
     }
