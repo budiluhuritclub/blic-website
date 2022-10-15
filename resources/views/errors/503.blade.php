@@ -25,9 +25,9 @@
     @include('includes.admin.neat-styles')
 
     <!-- Page -->
-    <link rel="stylesheet" href="{{ asset('admin-template/assets/vendor/css/pages/page-misc.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/public/admin-template/assets/vendor/css/pages/page-misc.css') }}" />
     <!-- Helpers -->
-    <script src="{{ asset('admin/assets/vendor/js/helpers.js') }}"></script>
+    <script src="{{ asset('/public/admin/assets/vendor/js/helpers.js') }}"></script>
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
@@ -43,7 +43,7 @@
             <p class="mb-4 mx-2">Sorry for the inconvenience but we're performing some maintenance at the moment</p>
             <a href="{{ route('home') }}" class="btn btn-primary">Back to home</a>
             <div class="mt-4">
-                <img src="{{ asset('admin-template/assets/img/illustrations/girl-doing-yoga-light.png') }}"
+                <img src="{{ asset('/public/admin-template/assets/img/illustrations/girl-doing-yoga-light.png') }}"
                     alt="girl-doing-yoga-light" width="500" class="img-fluid"
                     data-app-dark-img="illustrations/girl-doing-yoga-dark.png"
                     data-app-light-img="illustrations/girl-doing-yoga-light.png" />

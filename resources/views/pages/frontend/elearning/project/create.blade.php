@@ -137,12 +137,12 @@
 @endsection
 
 @push('end-style')
-    <link href="{{ asset('css/dragdrop.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/public/css/dragdrop.css') }}" rel="stylesheet" />
 @endpush
 
 @push('end-script')
-    <script src="{{ asset('js/dragdrop.js') }}"></script>
-    <script src="{{ asset('js/sweetalert2.all.min.js') }}"></script>
+    <script src="{{ asset('/public/js/dragdrop.js') }}"></script>
+    <script src="{{ asset('/public/js/sweetalert2.all.min.js') }}"></script>
 
     <script>
         // drag drop

@@ -23,7 +23,7 @@
                         </div>
                         <div class="col-sm-5 text-center text-sm-left">
                             <div class="card-body pb-0 px-0 px-md-4">
-                                <img src="{{ asset('admin-template/assets/img/illustrations/man-with-laptop-light.png') }}"
+                                <img src="{{ asset('/public/admin-template/assets/img/illustrations/man-with-laptop-light.png') }}"
                                     height="140" alt="View Badge User"
                                     data-app-dark-img="illustrations/man-with-laptop-dark.png') }}"
                                     data-app-light-img="illustrations/man-with-laptop-light.png') }}" />
@@ -39,7 +39,7 @@
                             <div class="card-body">
                                 <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="{{ asset('admin-template/assets/img/icons/unicons/chart-success.png') }}"
+                                        <img src="{{ asset('/public/admin-template/assets/img/icons/unicons/chart-success.png') }}"
                                             alt="chart success" class="rounded" />
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@
                             <div class="card-body">
                                 <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="{{ asset('admin-template/assets/img/icons/unicons/wallet-info.png') }}"
+                                        <img src="{{ asset('/public/admin-template/assets/img/icons/unicons/wallet-info.png') }}"
                                             alt="Credit Card" class="rounded" />
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@
                     <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="{{ asset('admin-template/assets/img/icons/unicons/chart-success.png') }}"
+                                <img src="{{ asset('/public/admin-template/assets/img/icons/unicons/chart-success.png') }}"
                                     alt="chart success" class="rounded" />
                             </div>
                             <span class="fw-semibold d-block mb-1">Web programming</span>
@@ -87,7 +87,7 @@
                     <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="{{ asset('admin-template/assets/img/icons/unicons/chart-success.png') }}"
+                                <img src="{{ asset('/public/admin-template/assets/img/icons/unicons/chart-success.png') }}"
                                     alt="chart success" class="rounded" />
                             </div>
                             <span class="fw-semibold d-block mb-1">Mobile programming</span>
@@ -101,7 +101,7 @@
                     <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="{{ asset('admin-template/assets/img/icons/unicons/chart-success.png') }}"
+                                <img src="{{ asset('/public/admin-template/assets/img/icons/unicons/chart-success.png') }}"
                                     alt="chart success" class="rounded" />
                             </div>
                             <span class="fw-semibold d-block mb-1">Cyber security</span>
@@ -115,7 +115,7 @@
                     <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="{{ asset('admin-template/assets/img/icons/unicons/wallet-info.png') }}" alt="Credit Card"
+                                <img src="{{ asset('/public/admin-template/assets/img/icons/unicons/wallet-info.png') }}" alt="Credit Card"
                                     class="rounded" />
                             </div>
                             <span>User interface and experience</span>
@@ -129,7 +129,7 @@
                     <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="{{ asset('admin-template/assets/img/icons/unicons/wallet-info.png') }}" alt="Credit Card"
+                                <img src="{{ asset('/public/admin-template/assets/img/icons/unicons/wallet-info.png') }}" alt="Credit Card"
                                     class="rounded" />
                             </div>
                             <span>Data mining</span>
@@ -143,7 +143,7 @@
                     <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="{{ asset('admin-template/assets/img/icons/unicons/wallet-info.png') }}" alt="Credit Card"
+                                <img src="{{ asset('/public/admin-template/assets/img/icons/unicons/wallet-info.png') }}" alt="Credit Card"
                                     class="rounded" />
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                     <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="{{ asset('admin-template/assets/img/icons/unicons/wallet-info.png') }}" alt="Credit Card"
+                                <img src="{{ asset('/public/admin-template/assets/img/icons/unicons/wallet-info.png') }}" alt="Credit Card"
                                     class="rounded" />
                             </div>
                         </div>
