@@ -1,0 +1,163 @@
+:root {
+    --blue: #2447f9;
+    --indigo: #322f56;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #c2c2c8;
+    --gray-dark: #343a40;
+    --primary: #322f56;
+    --secondary: #a8a8a8;
+    --success: #28a745;
+    --info: #2b50b4;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #34364a;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Montserrat", sans-serif;
+    --font-family-monospace: "Poppins", serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    opacity: 0;
+}
+
+.dropload {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    background-color: #fbfbfb;
+    border: 1px solid #efefef;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.drogload label {
+    cursor: pointer;
+}
+.dropload p {
+    max-width: 100%;
+}
+.dropload .dropload-ready,
+.dropload .dropload-drag,
+.dropload .dropload-drop {
+    transition: all 0.35s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.dropload .dropload-drop {
+    height: 100%;
+    position: absolute;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    top: 0;
+}
+.dropload .dropload-drop .btn-control {
+    position: absolute;
+    right: 15px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 15px;
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 0 !important;
+}
+.dropload .dropload-drop .btn-control:hover {
+    background: #e74c3c !important;
+    transition: all 0.3;
+}
+.dropload__dragged {
+    border: 1px solid #efefef;
+}
+.dropload__ready .dropload-ready .info {
+    color: #ccc;
+}
+.dropload__ready .dropload-ready .header {
+    color: #ccc;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.dropload__ready .dropload-ready .bxs-cloud-upload {
+    font-size: 82px;
+    color: #ccc;
+    transition: all 0.8s;
+}
+.dropload__ready .dropload-drag {
+    opacity: 0;
+}
+.dropload__ready .dropload-drop {
+    opacity: 0;
+}
+.dropload__dragged .dropload-ready {
+    opacity: 0;
+}
+.dropload__dragged .dropload-drag {
+    opacity: 1;
+}
+.dropload__dragged .dropload-drop {
+    opacity: 0;
+}
+.dropload__dropped .dropload-ready {
+    opacity: 0;
+}
+.dropload__dropped .dropload-drag {
+    opacity: 0;
+}
+.dropload__dropped .dropload-drop {
+    opacity: 1;
+    z-index: 99;
+}
+.dropload:hover .dropload-ready .bxs-cloud-upload {
+    color: var(--blue);
+    transition: all 0.3s;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.dropload:hover {
+    box-shadow: 0 0 0 0.2rem rgba(130, 151, 247, 0.3);
+    transition: all 0.8s;
+}
+.dropload__error {
+    border: 1px solid var(--red);
+}
+.dropload__error:hover {
+    border: 1px solid var(--red) !important;
+}

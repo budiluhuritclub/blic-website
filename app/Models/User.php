@@ -51,6 +51,12 @@ class User extends Authenticatable
 
     ];
 
+
+    public function projects()
+    {
+        return $this->hasMany('App\Models\Project', 'user_id', 'id');
+    }
+
     public function divisions()
     {
         return $this->hasOne(DivMember::class, 'nim', 'nim');

@@ -1,8 +1,8 @@
-<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme" style="z-index: 100">
     <div class="app-brand demo">
         <a href="{{ route('dashboard-elearning') }}" class="app-brand-link">
             <span class="app-brand-logo demo">
-                <img src="{{ url('/public/images/JARINGAN1.png') }}" alt="" width="40px">
+                <img src="{{ asset('images/JARINGAN1.png') }}" alt="" width="40px">
             </span>
             <span class="app-brand-text menu-text fw-bolder ms-2">Budiluhur IT Club</span>
         </a>
@@ -16,7 +16,7 @@
 
     <ul class="menu-inner py-1">
         <!-- Dashboard -->
-        <li class="menu-item active">
+        <li class="menu-item {{ request()->is('elearning/dashboard') ? 'active' : '' }}">
             <a href="{{ route('dashboard-elearning') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
@@ -68,8 +68,8 @@
         </li>
 
         <!-- Project -->
-        <li class="menu-item">
-            <a href="javascript;;" class="menu-link">
+        <li class="menu-item {{ request()->is('elearning/project*') ? 'active' : '' }}">
+            <a href="{{ route('project.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-file"></i>
                 <div data-i18n="Basic">Project</div>
             </a>

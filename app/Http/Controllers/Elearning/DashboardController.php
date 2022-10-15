@@ -9,6 +9,11 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('pages.frontend.elearning.dashboard');
+        $my_projects = auth()->user()->projects();
+
+        $project_visible_count = $my_projects->clone()->whereIsVisible(true)->count();
+        $project_hidden_count = $my_projects->clone()->whereIsVisible(false)->count();
+
+        return view('pages.frontend.elearning.dashboard', compact('project_visible_count', 'project_hidden_count'));
     }
 }
