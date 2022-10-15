@@ -76,11 +76,11 @@
                                 <img src="{{ asset('admin-template/assets/img/icons/unicons/chart-success.png') }}"
                                     alt="chart success" class="rounded" />
                             </div>
+                            <span class="fw-semibold d-block mb-1">Web programming</span>
+                            <h3 class="card-title mb-4">{{ $webprogramming }}</h3>
                         </div>
-                        <span class="fw-semibold d-block mb-1">Web programming</span>
-                        <h3 class="card-title mb-4">{{ $webprogramming }}</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-12 col-4 mb-4">
                 <div class="card">
@@ -90,11 +90,11 @@
                                 <img src="{{ asset('admin-template/assets/img/icons/unicons/chart-success.png') }}"
                                     alt="chart success" class="rounded" />
                             </div>
+                            <span class="fw-semibold d-block mb-1">Mobile programming</span>
+                            <h3 class="card-title mb-4">{{ $mobileprogramming }}</h3>
                         </div>
-                        <span class="fw-semibold d-block mb-1">Mobile programming</span>
-                        <h3 class="card-title mb-4">{{ $mobileprogramming }}</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-12 col-4 mb-4">
                 <div class="card">
@@ -104,11 +104,11 @@
                                 <img src="{{ asset('admin-template/assets/img/icons/unicons/chart-success.png') }}"
                                     alt="chart success" class="rounded" />
                             </div>
+                            <span class="fw-semibold d-block mb-1">Cyber security</span>
+                            <h3 class="card-title mb-4">{{ $cybersecurity }}</h3>
                         </div>
-                        <span class="fw-semibold d-block mb-1">Cyber security</span>
-                        <h3 class="card-title mb-4">{{ $cybersecurity }}</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-12 col-4 mb-4">
                 <div class="card">
@@ -118,11 +118,11 @@
                                 <img src="{{ asset('admin-template/assets/img/icons/unicons/wallet-info.png') }}" alt="Credit Card"
                                     class="rounded" />
                             </div>
+                            <span>User interface and experience</span>
+                            <h3 class="card-title text-nowrap mb-4">{{ $uiux }}</h3>
                         </div>
-                        <span>User interface and experience</span>
-                        <h3 class="card-title text-nowrap mb-4">{{ $uiux }}</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-12 col-4 mb-4">
                 <div class="card">
@@ -132,11 +132,11 @@
                                 <img src="{{ asset('admin-template/assets/img/icons/unicons/wallet-info.png') }}" alt="Credit Card"
                                     class="rounded" />
                             </div>
+                            <span>Data mining</span>
+                            <h3 class="card-title text-nowrap mb-4">{{ $datamining }}</h3>
                         </div>
-                        <span>Data mining</span>
-                        <h3 class="card-title text-nowrap mb-4">{{ $datamining }}</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-12 col-4 mb-4">
                 <div class="card">

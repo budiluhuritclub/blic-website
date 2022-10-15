@@ -114,6 +114,12 @@ Route::prefix('admin')->group(function () {
         Route::get('/all-division', [AdminDivisionController::class, 'index'])->name('all-division');
         Route::get('/all-division/create-new-division', [AdminDivisionController::class, 'create'])->name('create-new-division');
         Route::post('/all-division/store-new-division', [AdminDivisionController::class, 'store'])->name('save-new-division');
+        // perdivision
+        Route::get('/division/detail/web-programming', [AdminDivisionController::class, 'webprogrammingDetail'])->name('web-programming-detail');
+        Route::get('/division/detail/mobile-programming', [AdminDivisionController::class, 'mobileprogrammingDetail'])->name('mobile-programming-detail');
+        Route::get('/division/detail/uiux', [AdminDivisionController::class, 'uiuxDetail'])->name('uiux-detail');
+        Route::get('/division/detail/cyber-security', [AdminDivisionController::class, 'cybersecurityDetail'])->name('cyber-security-detail');
+        Route::get('/division/detail/data-mining', [AdminDivisionController::class, 'dataminingDetail'])->name('data-mining-detail');
 
         // devcamp
         Route::resource('devcamp', DevcampController::class);
