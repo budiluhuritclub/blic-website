@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\DivMember;
+use App\Models\Project;
 use App\Models\User;
 
 class DashboardController extends Controller
@@ -20,6 +21,8 @@ class DashboardController extends Controller
         $cybersecurity = DivMember::where('kode_divisi', '5')->count('kode_divisi');
         $monsoonsim = DivMember::where('kode_divisi', '6')->count('kode_divisi');
 
-        return view('pages.admin.dashboard', compact('totalpengurus', 'totalanggota', 'webprogramming', 'mobileprogramming', 'uiux', 'datamining', 'cybersecurity', 'monsoonsim'));
+        $projects = Project::count();
+
+        return view('pages.admin.dashboard', compact('totalpengurus', 'totalanggota', 'webprogramming', 'mobileprogramming', 'uiux', 'datamining', 'cybersecurity', 'monsoonsim', 'projects'));
     }
 }
