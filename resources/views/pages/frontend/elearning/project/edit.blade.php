@@ -48,7 +48,7 @@
                         <div class="card mb-4">
                             <div class="card-body">
                                 <div class="mb-3">
-                                    <div class="dropload dropload__dropped dropload__ready" style="background-image: url({{ Storage::url($project->photo) ?? '' }})">
+                                    <div class="dropload dropload__dropped dropload__ready" style="background-image: url({{ asset('storage/', . $project->photo ?? '') ?? '' }})">
                                         <div class="dropload-ready">
                                             <i class='bx bxs-cloud-upload'></i>
                                             <p class="header font-weight-normal">Drag &amp; Drop Image</p>

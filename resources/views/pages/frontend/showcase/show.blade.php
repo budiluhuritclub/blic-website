@@ -17,7 +17,7 @@
                 <div class="col-6">
                     <div class="card mb-4">
                         <div class="card-body">
-                          <img src="{{ Storage::url($project->photo) }}" class="img-fluid" alt="">
+                          <img src="{{ asset('storage/', . $project->photo ?? '') }}" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
