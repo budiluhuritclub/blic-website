@@ -35,7 +35,7 @@
                   <div class="col col-md-4">
                     <a href="{{ route('showcase.show', $project->slug) }}">
                       <div class="card">
-                        <img class="card-img-top" src="{{ asset('storage/', . $project->photo ?? '') ?? '' }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('storage/' . $project->photo ?? '') ?? '' }}" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">{{ $project->name ?? '' }}</h5>
                           <h6 class="card-subtitle text-muted mb-2">{{ $project->user->name ?? '' }}</h6>
