@@ -24,7 +24,7 @@
         <div class="card p-5 mt-4">
             <div class="d-flex align-items-center">
                 <h6 class="mb-0">Budi Luhur IT Project</h6>
-                <a href="{{ route('project.create') }}" class="text-primary font-weight-bold text-xs mt-2 ms-auto">Add Project</a>
+                <a href="{{ route('project.create') }}" class="text-primary font-weight-bold text-xs ms-auto">Add Project</a>
             </div>
             <div class="p-0 mt-4">
 

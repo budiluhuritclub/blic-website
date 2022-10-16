@@ -14,7 +14,7 @@
     <div class="" style="padding-top: 100px">
         <div class="container mt-3 mb-3">
             <div class="row justify-content-center pt-2 pb-4">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="mb-3">
                         <form action="{{ route('showcase.index') }}" method="GET">
                             <select id="defaultSelect" name="category" class="form-select form-select-lg" onchange="form.submit()">`
