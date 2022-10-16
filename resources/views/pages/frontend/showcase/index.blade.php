@@ -49,8 +49,8 @@
                     <div class="col-12 d-flex justify-content-center">
                         <div class="text-center">
                             {{-- alert --}}
-                            <div class="alert alert-info" role="alert">
-                                <span class="text-center">You don't have any project yet</span>
+                            <div class="alert text-white" role="alert" style="background-color: rgb(115, 115, 255)">
+                                <span class="text-center">No Project Found</span>
                             </div>
                         </div>
                     </div>
