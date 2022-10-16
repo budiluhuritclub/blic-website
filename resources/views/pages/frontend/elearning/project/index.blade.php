@@ -40,7 +40,7 @@
                   <div class="col col-md-4">
                     <a href="{{ route('project.edit', $my_project->slug) }}">
                       <div class="card">
-                        <img class="card-img-top" src="{{ asset('storage/' . $project->photo ?? '') ?? '' }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ asset('/public/storage/' . $project->photo ?? '')  }}" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">{{ $my_project->name ?? '' }}</h5>
                           <h6 class="card-subtitle text-muted mb-2">{{ $my_project->category_project->name ?? '' }}</h6>
