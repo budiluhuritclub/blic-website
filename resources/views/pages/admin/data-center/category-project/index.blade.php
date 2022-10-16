@@ -27,7 +27,7 @@
                 <a href="{{ route('category_project.create') }}" class="text-primary font-weight-bold text-xs mt-2 ms-auto">Add
                     Category Project</a>
             </div>
-            <div class="table-responsive p-0 mt-4">
+            <div class="table-responsive text-nowrap p-0 mt-4">
 
               @if(session()->has('success'))
                   <div class="alert alert-success alert-dismissible" role="alert">
@@ -48,7 +48,7 @@
                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" width="30%">
                                 Slug
                             </th>
-                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" width="10%">Action</th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 text-center" width="10%">Action</th>
                         </tr>
                     </thead>
                     <tbody>
