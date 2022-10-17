@@ -30,4 +30,16 @@ class UpdateCategoryProjectRequest extends FormRequest
             ]
         ];
     }
+
+    /**
+     * Prepare the data for validation.
+     *
+     * @return void
+     */
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'name' => strip_tags(trim($this->name)),
+        ]);
+    }
 }
