@@ -32,7 +32,7 @@
             <div class="row">
 
                 @forelse ($projects as $project)
-                  <div class="col col-md-4">
+                  <div class="col col-md-4 mb-4">
                     <a href="{{ route('showcase.show', $project->slug) }}">
                       <div class="card">
                         <img class="card-img-top" src="{{ asset('/public/storage/' . $project->photo ?? '') }}" alt="Card image cap">
