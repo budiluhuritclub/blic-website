@@ -25,7 +25,7 @@
                     </a>
                 </li>
                 <li class="nav-item ms-3">
-                    <a class="nav-link me-2" href=""> Showcase
+                    <a class="nav-link me-2" href="{{ route('showcase.index') }}"> Showcase
                     </a>
                 </li>
                 @auth

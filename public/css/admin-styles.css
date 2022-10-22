@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=admin-styles.css.map */
+.statistik-card a {
+  color: #302c3d !important;
+}
+
+.statistik-card a:hover {
+  -webkit-box-shadow: 2px black;
+          box-shadow: 2px black;
+}
+/*# sourceMappingURL=admin-styles.css.map */

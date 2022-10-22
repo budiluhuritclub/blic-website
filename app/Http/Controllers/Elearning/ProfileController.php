@@ -73,14 +73,25 @@ class ProfileController extends Controller
     public function storedivision(Request $request)
     {
         $count = DivMember::where('nim', Auth::user()->nim)->count('nim');
+        $maxkodediv = Division::all()->sortByDesc('kode')->first();
 
         if ($count == 2) {
             return redirect()->route('profile');
         }
 
+        $validator = Validator::make($request->only('divisi'), [
+            'divisi'      =>      'required|min:1|max:{$maxkodediv->kode}',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        $validated = $validator->validated();
+
         DivMember::create([
-            'nim'               => Auth::user()->nim,
-            'kode_divisi'     => $request->divisi
+            'nim'             => Auth::user()->nim,
+            'kode_divisi'     => $validated['divisi']
         ]);
 
         return redirect()->route('profile');

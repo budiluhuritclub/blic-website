@@ -38,6 +38,11 @@ class RegistrationmembersController extends Controller
         $validated = $validator->validated();
 
         $validated['join_year'] = date("Y");
+        (Registers::where('nim', $validated['nim'])->where('join_year', date("Y"))->select('nim')->first() != null) ? $data = 1 : $data = 0;
+
+        if ($data != 0) {
+            return back()->with('error', 'You have successfuly registered this periode');
+        }
 
         Registers::create($validated);
 

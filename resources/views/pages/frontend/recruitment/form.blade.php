@@ -14,6 +14,7 @@
 
     <div class="form-section">
         <div class="container">
+            @include('includes.alerts')
             <form action="{{ route('applying-member') }}" method="POST">
                 @csrf
                 <div class="mb-3">

@@ -16,14 +16,16 @@
     <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico" />
 
     <!-- Page CSS -->
+    @stack('start-style')
     @include('includes.elearning.styles')
+    @stack('end-style')
 
     <!-- Helpers -->
-    <script src="{{ url('/public/admin-template/assets/vendor/js/helpers.js') }}"></script>
+    <script src="{{ asset('/public/admin-template/assets/vendor/js/helpers.js') }}"></script>
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="{{ url('/public/admin-template/assets/js/config.js') }}"></script>
+    <script src="{{ asset('/public/admin-template/assets/js/config.js') }}"></script>
 </head>
 
 <body>
@@ -72,11 +74,13 @@
         </div>
 
         <!-- Overlay -->
-        <div class="layout-overlay layout-menu-toggle"></div>
+        <div class="layout-overlay layout-menu-toggle" style="z-index: 99"></div>
     </div>
     <!-- / Layout wrapper -->
 
+    @stack('start-script')
     @include('includes.elearning.scripts')
+    @stack('end-script')
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
