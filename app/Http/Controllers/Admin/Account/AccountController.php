@@ -73,7 +73,6 @@ class AccountController extends Controller
     {
         $item = User::where('id', $id)->first();
 
-        // dd($item);
         return view('pages.admin.account.show', compact('item'));
     }
 
