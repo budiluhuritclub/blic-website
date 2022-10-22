@@ -71,7 +71,9 @@ class AccountController extends Controller
      */
     public function show($id)
     {
-        //
+        $item = User::where('id', $id)->first();
+
+        return view('pages.admin.account.show', compact('item'));
     }
 
     /**

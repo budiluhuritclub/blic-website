@@ -39,11 +39,37 @@ class LoginController extends Controller
      */
     protected function validateLogin(Request $request)
     {
-        $request->validate([
-            $this->username() => 'required|string',
-            'password' => 'required|string',
-            'h-captcha-response' => 'required|HCaptcha'
-        ]);
+        if ($request->session()->get('attempt') == '3') {
+            $request->validate([
+                $this->username() => 'required|string',
+                'password' => 'required|string',
+                'h-captcha-response' => 'required|HCaptcha'
+            ]);
+        }
+
+        if ($request->session()->get('attempt') == '2') {
+            $request->session()->put('attempt', '3');
+            $request->validate([
+                $this->username() => 'required|string',
+                'password' => 'required|string',
+            ]);
+        }
+
+        if ($request->session()->get('attempt') == '1') {
+            $request->session()->put('attempt', '2');
+            $request->validate([
+                $this->username() => 'required|string',
+                'password' => 'required|string',
+            ]);
+        }
+
+        if (empty($request->session()->get('attempt'))) {
+            $request->session()->put('attempt', '1');
+            $request->validate([
+                $this->username() => 'required|string',
+                'password' => 'required|string',
+            ]);
+        }
     }
 
     /**

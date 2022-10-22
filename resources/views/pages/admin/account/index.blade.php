@@ -53,8 +53,9 @@
                                 <td class="ps-4">{{ $item->email }}</td>
                                 <td class="ps-4">{{ $item->fakultas }}</td>
                                 <td class="align-middle">
-                                    <a href="" class="text-secondary font-weight-bold text-xs ms-3" disabled
-                                        data-toggle="tooltip" data-original-title="Detail user">
+                                    <a href="{{ route('account.show', $item->id) }}"
+                                        class="text-secondary font-weight-bold text-xs ms-3" disabled data-toggle="tooltip"
+                                        data-original-title="Detail user">
                                         Detail
                                     </a>
                                 </td>
